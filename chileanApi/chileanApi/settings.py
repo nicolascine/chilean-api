@@ -80,13 +80,14 @@ WSGI_APPLICATION = 'chileanApi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'OPTIONS': {
-            'read_default_file': os.path.join(BASE_DIR, 'db.cnf')
-        },
+        'ENGINE': 'django.db.backends.mysql', 
+        'HOST': 'localhost',
+        'NAME': 'chilean-api',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'DEFAULT-CHARACTER': 'utf8',
     }
 }
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
