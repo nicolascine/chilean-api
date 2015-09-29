@@ -41,6 +41,12 @@ INSTALLED_APPS = (
     'rest_framework',
     # own apps
     'chileanApi',
+    'api',
+    'congress',
+    'data',
+    'economy',
+    'transport',
+    'utils',
 )
 
 MIDDLEWARE_CLASSES = (
