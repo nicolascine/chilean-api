@@ -11,4 +11,4 @@ class SenateSpider(scrapy.Spider):
 
     def parse(self, response):
             for name in response.xpath('//td//a[1]/text()').extract():
-                yield {"name": nombre}
+                yield {"name": name}
